@@ -1,12 +1,11 @@
 //Joan Sanchez
-/*
- * csc 321
- * Lab #6
- */
+//CSC 321
+//Lab #6
+ 
 
-import java.util.Scanner;
 
-public class jsanchez3
+
+public class jsanchez6
 {
 	public static void main(String[] args)
 	{

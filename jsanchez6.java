@@ -1,7 +1,7 @@
-//Joan Sandhz
+//Joan Sanchez
 /*
  * csc 321
- * lab #3
+ * Lab #6
  */
 
 import java.util.Scanner;

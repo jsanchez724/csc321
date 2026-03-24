@@ -47,29 +47,31 @@ int main(void)
 				break;
 
 			}
+
+			if(userNumChoice < randomNum)
+			{
+
+				printf("The number you have guessed is lower than the winning number, please try again.\n");
+
+			}
+			else if(userNumChoice > randomNum)
+			{
+
+				printf("The number you have guessed is greather than the winning number, please try again.\n");
+			}
 		}
 
 		else
+
 		{
 
 			printf("Your input exceeded our program processing capabilities. Please enter a valid number betweem 1 - 20.\n");
 		
 		}
 
-		if(userNumChoice < randomNum)
-		{
-
-			printf("The number you have guessed is lower than the winning number, Please try again.\n");
-
-		}
-
-		else if(userNumChoice > randomNum)
-		{
-			printf("The number you have guessed is greater than the winning number, Please try again.\n");
-
-		}
 
 		if(counter == maxAttempts)
+	
 		{
 
 			printf("You have used up all your guesses, the number was: %d\n",randomNum);
@@ -77,11 +79,9 @@ int main(void)
 
 		}
 
-		
 
 	}
 }
-
 
 
 

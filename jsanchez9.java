@@ -28,10 +28,10 @@ public class jsanchez9
 
 		while(userNumChoice != randomNum)
 		{
+			counter++;
+
 			System.out.println("Please enter a number between 1 - 20: ");
 			userNumChoice = input.nextInt();
-
-
 
 
 			if(userNumChoice >= 1 && userNumChoice <= 20 )
@@ -39,9 +39,12 @@ public class jsanchez9
 			
 				if(userNumChoice == randomNum)
 				{
+					
 					System.out.println("You have gussed correctly, the number was: " + randomNum);
-					for(i = 0; i < counter; i++)
+					
+					for(i = 0; i < randomNum; i++)
 					{
+					
 						System.out.println("You won and guessed the number correctly which was: " + randomNum);
 
 					}
@@ -49,23 +52,27 @@ public class jsanchez9
 					break;
 				}
 
+				if(userNumChoice < randomNum)
+				{
+
+					System.out.println("The number you have guessed is lower than the winning number, please try again.");
+
+				}
+				else if(userNumChoice > randomNum)
+				{
+
+					System.out.println("The number you have guessed is greater than the winning number, please try again");
+
+				}
 			}
 			else
 			{
+
+				
 				System.out.println("Your input exceeded our program processing capabilities. Please enter a valid number between 1 - 20: ");
 
 			}
-
-			if(userNumChoice < randomNum)
-			{
-				System.out.println("The number you have guessed is lower than the winning number, Please try again.");
-
-			} 
-			else if(userNumChoice > randomNum)
-			{
-				System.out.println("The numberyou have guessed is greater than the winning number, Please try again");
-			}
-
+			
 			if(counter == maxAttempts)
 			{
 
@@ -73,7 +80,7 @@ public class jsanchez9
 				break;
 
 			}
-			counter++;
+			
 
 
 		}
